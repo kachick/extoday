@@ -1,22 +1,8 @@
-# .sh_extoday - Extentions for GNU/date on Bourne Shell Family
-# 
-#   Example:
-#     # Load before using
-#     . ./.sh_extoday
-#
-#     if [ $(show_nth_week_this_month) = 4 ] && [ $(show_wtoday) = Mon ]; then
-#         # Run lists on Monday of 4th week in this month
-#         # (it's not always a 4th Monday)
-#     elif [ $(show_nth_wday_this_month) = 4 ] && [ $(show_wtoday) = Mon ]; then
-#         # Run lists on 4th Monday in this month
-#     fi
+# .extoday.sh - Extentions for GNU/date on Bourne shell family
 # 
 #   Copyright (C) 2011  Kenichi Kamiya
 #
-#   This library is free software; you can redistribute it and/or
-#   modify it under the terms of the GNU Lesser General Public
-#   License as published by the Free Software Foundation; either
-#   version 2.1 of the License, or (at your option) any later version.
+#   LICENCE: LGPL v2.1
 ###############################################################################
  
 # stdout: yyyy-mm-dd

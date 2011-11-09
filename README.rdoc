@@ -7,10 +7,10 @@
 
 === EXAMPLES:
 
-# load before using
-. ./.extoday.sh
+load before using:
+    . ./.extoday.sh
 
-* ex 1:
+* ex 1: # Run lists on specific days
     if [ $(show_nth_week_this_month) = 4 ] && [ $(show_wtoday) = Mon ]; then
         # Run lists on Monday of 4th week in this month
         # (it's not always a 4th Monday)
@@ -19,9 +19,7 @@
     fi
 
 
-* ex 2:
-    #list next year's Mondays on 4th week of the month
-
+* ex 2:  # list next year's Mondays on 4th week of the month
     LANG=C; export LANG
 
     for i in $(seq 0 365); do
