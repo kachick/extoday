@@ -1,8 +1,7 @@
-# .extoday.sh - Extentions for GNU/date on Bourne shell family
+# extoday
 # 
 #   Copyright (C) 2011  Kenichi Kamiya
-#
-#   LICENCE: LGPL v2.1
+#   License: LGPL v2.1
 ###############################################################################
  
 # stdout: yyyy-mm-dd
