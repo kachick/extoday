@@ -1,6 +1,6 @@
 = extoday
 
-  * http://github.com/kachick/extoday
+* http://github.com/kachick/extoday
 
 == Description
 
@@ -13,7 +13,7 @@ setup
     LANG=C; export LANG
     . ./lib/extoday.sh
 
-1. Run commands on specific days
+Run commands on specific days
 
     if [ $(show_nth_week_this_month) = 4 ] && [ $(show_wtoday) = Mon ]; then
         # Run commands on Monday of 4th week in this month
@@ -23,7 +23,7 @@ setup
     fi
 
 
-2. List Mondays on 4th week of the month in next year
+List Mondays on 4th week of the month in next year
   
     for i in $(seq 0 365); do
         date=$(date --date "$i day" '+%Y-%m-%d')
@@ -35,16 +35,16 @@ setup
 
 == Requirements
 
-  a shell of Bourne Shell Family
-  tested below
+a shell of Bourne Shell Family
+tested below
 
-  * bash
-  * dash
+* bash
+* dash
 
-  and date commmand behavior like linux
-  tested below
+and date commmand behavior like linux
+tested below
   
-  * GNU/date
+* GNU/date
 
 == License
 
