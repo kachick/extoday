@@ -1,6 +1,6 @@
-# extoday
+# extoday - Shell functions to get attributes arround a day.
 # 
-#   Copyright (C) 2011  Kenichi Kamiya
+#   Copyright (c) 2011 Kenichi Kamiya
 #   License: LGPL v2.1
 ###############################################################################
  
