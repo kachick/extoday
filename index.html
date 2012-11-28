@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Extoday by kachick</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Extoday</h1>
+        <p>Shell functions to get attributes arround a day.</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/kachick/extoday" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/kachick/extoday/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/kachick/extoday/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>extoday</h1>
+
+<h2>Description</h2>
+
+<p>Shell functions to get attributes arround a day.</p>
+
+<h2>Usage</h2>
+
+<p>Setup</p>
+
+<div class="highlight"><pre><span class="nv">LANG</span><span class="o">=</span>C; <span class="nb">export </span>LANG <span class="c"># recommend :)</span>
+. /path/lib/extoday.sh
+</pre></div>
+
+<p>Batch on specific days</p>
+
+<div class="highlight"><pre><span class="k">if</span> <span class="o">[</span> <span class="k">$(</span>show_nth_week_this_month<span class="k">)</span> <span class="o">=</span> 4 <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> <span class="k">$(</span>show_wtoday<span class="k">)</span> <span class="o">=</span> Mon <span class="o">]</span>; <span class="k">then</span>
+    <span class="c"># Run commands if script on Monday of "4th week" in current month</span>
+    <span class="c"># (it is not always on the "4th Monday")</span>
+    your_script
+<span class="k">elif</span> <span class="o">[</span> <span class="k">$(</span>show_nth_wday_this_month<span class="k">)</span> <span class="o">=</span> 4 <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> <span class="k">$(</span>show_wtoday<span class="k">)</span> <span class="o">=</span> Mon <span class="o">]</span>; <span class="k">then</span>
+    <span class="c"># Run commands if script on "4th Monday" in current month</span>
+<span class="k">fi</span>
+</pre></div>
+
+<p>List Mondays for "4th week of the months"  in next year</p>
+
+<div class="highlight"><pre><span class="k">for </span>n in <span class="k">$(</span>seq 0 365<span class="k">)</span>; <span class="k">do</span>
+<span class="k">    </span><span class="nv">date</span><span class="o">=</span><span class="k">$(</span>date --date <span class="s2">"$n day"</span> <span class="s1">'+%Y-%m-%d'</span><span class="k">)</span>
+
+    <span class="k">if</span> <span class="o">[</span> <span class="k">$(</span>show_nth_week_in_month <span class="s2">"$date"</span><span class="k">)</span> <span class="o">=</span> 4 <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> <span class="k">$(</span>show_wday <span class="s2">"$date"</span><span class="k">)</span> <span class="o">=</span> Mon <span class="o">]</span>; <span class="k">then</span>
+<span class="k">        </span><span class="nb">echo</span> <span class="s2">"$date"</span>
+    <span class="k">fi</span>
+<span class="k">done</span>
+</pre></div>
+
+<h2>Requirements</h2>
+
+<p>Choose</p>
+
+<ul>
+<li>bash</li>
+<li>dash</li>
+</ul><p>And</p>
+
+<ul>
+<li>GNU/date</li>
+</ul><h2>Link</h2>
+
+<ul>
+<li><a href="http://kachick.github.com/extoday">Home</a></li>
+<li><a href="https://github.com/kachick/extoday">code</a></li>
+</ul><h2>License</h2>
+
+<p>LGPL v2.1<br>
+Copyright (c) 2011 Kenichi Kamiya<br>
+See COPYING for further details.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/kachick">kachick</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
