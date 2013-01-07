@@ -4,7 +4,7 @@ extoday
 Description
 -------------
 
-Shell functions to get attributes arround a day.
+Shell functions to get attributes around a day.
 
 Usage
 -------

@@ -1,4 +1,4 @@
-# extoday - Shell functions to get attributes arround a day.
+# extoday - Shell functions to get attributes around a day.
 # 
 #   Copyright (c) 2011 Kenichi Kamiya
 #   License: LGPL v2.1
