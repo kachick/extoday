@@ -50,10 +50,9 @@ show_first_day_this_month() {
 show_nth_week_in_month() {
   local date="$1"
   local margin
-  # shellcheck disable=SC2046
-  margin=$(expr $(show_nth_week_in_year $(show_first_day_in_month "$date")) - 1)
+  margin=$(expr "$(show_nth_week_in_year "$(show_first_day_in_month "$date")")" - 1)
 
-  expr "$(show_nth_week_in_year $date)" - $margin
+  expr "$(show_nth_week_in_year "$date")" - "$margin"
 }
 
 # stdout: [1-5]
