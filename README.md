@@ -1,5 +1,7 @@
 # extoday
 
+Now, this repository in maintainance mode
+
 ## Description
 
 Shell functions to get attributes around a day.
@@ -10,7 +12,7 @@ Setup
 
 ```sh
 LANG=C; export LANG # recommend :)
-. /path/lib/extoday.sh
+. /path/lib/extoday.bash
 ```
 
 Batch on specific days
@@ -42,16 +44,10 @@ done
 Choose
 
 - bash
-- dash
 
 And
 
 - GNU/date
-
-## Link
-
-- [Home](http://kachick.github.com/extoday)
-- [code](https://github.com/kachick/extoday)
 
 ## License
 
