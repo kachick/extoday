@@ -1,13 +1,10 @@
-extoday
-========
+# extoday
 
-Description
--------------
+## Description
 
 Shell functions to get attributes around a day.
 
-Usage
--------
+## Usage
 
 Setup
 
@@ -28,7 +25,7 @@ elif [ $(show_nth_wday_this_month) = 4 ] && [ $(show_wtoday) = Mon ]; then
 fi
 ```
 
-List Mondays for "4th week of the months"  in next year
+List Mondays for "4th week of the months" in next year
 
 ```sh
 for n in $(seq 0 365); do
@@ -40,27 +37,24 @@ for n in $(seq 0 365); do
 done
 ```
 
-Requirements
----------------
+## Requirements
 
 Choose
 
-* bash
-* dash
+- bash
+- dash
 
 And
-  
-* GNU/date
 
-Link
------
+- GNU/date
 
-* [Home](http://kachick.github.com/extoday)
-* [code](https://github.com/kachick/extoday)
+## Link
 
-License
----------
+- [Home](http://kachick.github.com/extoday)
+- [code](https://github.com/kachick/extoday)
 
-LGPL v2.1  
-Copyright (c) 2011 Kenichi Kamiya  
+## License
+
+LGPL v2.1\
+Copyright (c) 2011 Kenichi Kamiya\
 See COPYING for further details.
