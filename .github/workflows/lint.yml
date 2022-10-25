@@ -52,4 +52,4 @@ jobs:
         run: 'shfmt --find .'
 
       - name: Run shfmt
-        run: 'shfmt --diff .'
+        run: 'shfmt --diff --indent 2 .'
