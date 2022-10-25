@@ -1,3 +1,4 @@
+# shellcheck disable=SC2003
 # extoday - Shell functions to get attributes around a day.
 #
 #   Copyright (c) 2011 Kenichi Kamiya
