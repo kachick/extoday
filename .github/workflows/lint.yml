@@ -34,7 +34,7 @@ jobs:
           tool_versions: 'shellcheck ${{ fromJson(needs.asdf-parser.outputs.tool-versions).shellcheck }}'
 
       - name: Run ShellCheck
-        run: 'shellcheck lib/*.sh'
+        run: 'shellcheck lib/* example/*'
 
   shfmt:
     needs: [asdf-parser]
