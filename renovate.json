@@ -6,7 +6,6 @@
     "github>kachick/renovate-config-dprint:plugins"
   ],
   "labels": ["dependencies", "renovate"],
-  "automerge": true,
   "enabledManagers": ["regex"],
   "prHourlyLimit": 10,
   "prConcurrentLimit": 5,
@@ -16,10 +15,6 @@
         "*"
       ],
       "rangeStrategy": "bump"
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
     }
   ]
 }
