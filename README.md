@@ -1,6 +1,7 @@
 # extoday
 
-Now, this repository in maintainance mode
+- _**This repository is archived**_
+- _**No longer maintained**_
 
 ## Description
 
